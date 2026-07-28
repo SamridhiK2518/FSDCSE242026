@@ -31,20 +31,24 @@
 //}
 //msgWithSum(sum,"Samridhi");
 
-function login(error,msg){
-    if (error){
-        console.log("Error: " + error);
-    } else {
-        console.log("Message: " + msg);
-    }   
-}
+//function login(error,msg){
+    //if (error){
+    //    console.log("Error: " + error);
+    //} else {
+    //    console.log("Message: " + msg);
+  //  }   
+//}
 
-function loginHandler(username,password,clbk){
-        if(username == "Samridhi" && password == "1825"){
-            clbk(null,"Login successful");
-        }else{
-            clbk("Invalid username or password",null);
-        }
-}
+//function loginHandler(username,password,clbk){
+     //   if(username == "Samridhi" && password == "1825"){
+        //    clbk(null,"Login successful");
+      //  }else{
+    //        clbk("Invalid username or password",null);
+  //      }
+//}
 
-loginHandler("Samridhi","1825",login);
+//loginHandler("Samridhi","1825",login);
+
+console.log("ONE")
+setTimeout(() => {console.log("TWO")}, 2000);
+console.log("THREE")
