@@ -1,41 +1,25 @@
 import React, { useState } from 'react'
 
 function MyState() {
-  const [counter, setCount] = useState(10)
-  const [color, setColor] = useState('red')
-
-  function decrement() {
-    setCount(counter - 5)
-  }
-
-  function increment() {
-    setCount(counter + 10)
-  }
+  const [name, setName] = useState('Samridhi Khanna')
+  const [college, setCollege] = useState('ABES Engineering College')
+  const [displayName, setDisplayName] = useState('')
+  const [displayCollege, setDisplayCollege] = useState('')
 
   return (
-    <div>
-      <h2>Counter: {counter}</h2>
-      <button onClick={decrement}>Decrement</button>
-      <button onClick={increment}>Increment</button>
+    <div style={{ padding: '20px' }}>
+      <button onClick={() => setDisplayName(name)}>Name</button>
+      <button onClick={() => setDisplayCollege(college)} style={{ marginLeft: '10px' }}>
+        College
+      </button>
 
-      <div
-        style={{
-          width: '200px',
-          height: '200px',
-          backgroundColor: color,
-          marginTop: '20px',
-          border: '1px solid black'
-        }}
-      ></div>
-
-      <div>
-        <button onClick={() => setColor('red')}>Red</button>
-      </div>
-      <div>
-        <button onClick={() => setColor('blue')}>Blue</button>
-      </div>
-      <div>
-        <button onClick={() => setColor('green')}>Green</button>
+      <div style={{ marginTop: '20px' }}>
+        <p>
+          <strong>Name:</strong> {displayName || 'KK'}
+        </p>
+        <p>
+          <strong>College:</strong> {displayCollege || 'Dhirubhai Ambani Acting Academy'}
+        </p>
       </div>
     </div>
   )
