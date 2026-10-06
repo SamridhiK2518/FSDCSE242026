@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import ImageManipulation from './components/ImageManipulation';
+import MyUseEffect from './components/MyUseEffect';
+// import ImageManipulation from './components/ImageManipulation';
+
 
 function App() {
 
@@ -55,8 +57,8 @@ function App() {
 
 
       <div>
-
-        <ImageManipulation />
+        <MyUseEffect />
+        {/* <ImageManipulation /> */}
         
       </div>
 
